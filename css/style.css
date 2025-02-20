@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
+/*global style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+body {
+  font-family: "Alegreya", serif;
+  font-size: 22px;
+  scroll-behavior: smooth;
+}
+p {
+  font-family: "Alegreya Sans", sans-serif;
+  color: #686868;
+}
+span,
+button {
+  font-family: "Alegreya Sans", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.row {
+  display: inline-block;
+  width: 49%;
+}
+.padding-section {
+  padding: 20px 0;
+}
+img {
+  width: 100%;
+}
+/***home style**/
+#home {
+  background-image: url(../images/drew-coffman-1872.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+}
+.bg-layer {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+#home p {
+  color: white;
+  margin: 0 0 20px 0;
+}
+a {
+  text-decoration: none;
+}
+#home a {
+  color: white;
+}
+.logo {
+  vertical-align: middle;
+}
+.logo img {
+  width: 60%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  position: fixed;
+  width: 100%;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  font-size: 26px;
+  align-items: center;
+}
+.home-caption {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  font-size: 26px;
+}
+.home-caption h1 {
+  font-size: 76px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.btn-one {
+  background-color: #8e7754;
+  color: white;
+  padding: 10px;
+  border-color: transparent;
+  padding: 12px 24px;
+  font-size: 26px;
+  cursor: pointer;
+}
+.btn-one:hover {
+  background-color: #e6c08790;
+}
+.home-btn {
+  margin-top: 10px;
+}
+.btn-two {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border: 2px solid white;
+  padding: 12px 24px;
+  font-size: 26px;
+  cursor: pointer;
+}
+.btn-two:hover {
+  background-color: #d3d3d353;
+}
+#home p {
+  line-height: 25px;
+}
+.animation {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+.outer {
+  width: 40px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.inner {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: moveBall 2s ease-in-out infinite;
+}
+
+@keyframes moveBall {
+  0%,
+  100% {
+    transform: translate(0%, -200%);
+  }
+  50% {
+    transform: translate(0%, -100%);
+  }
+}
+/****about style****/
+
+.img-about img {
+  width: 100%;
+}
+.about-details {
+  margin: 10px;
+}
+.about-details ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: 26px;
+  margin-top: 50px;
+}
+.about-details li {
+  color: #686868;
+}
+.about-details img {
+  width: 50px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.about-details {
+  vertical-align: top;
+  margin-top: 40px;
+  padding-left: 20px;
+}
+.about-details h2 {
+  font-size: 48px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.about-details p {
+  line-height: 25px;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+/*****location style****/
+#ouroffer {
+  background-color: #f8f8f8;
+}
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location-details h2 {
+  font-size: 48px;
+  line-height: 30px;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+.location-details p {
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+#location {
+  background-color: #f8f8f8;
+}
+/**********our backing*****/
+.heading h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 48px;
+
+  font-weight: 400;
+}
+.heading {
+  text-align: center;
+  margin: 50px 0;
+}
+.item {
+  width: 30%;
+  margin-right: 30px;
+  float: left;
+  text-align: center;
+}
+.item h3 {
+  font-weight: 400;
+  margin: 20px 0;
+  font-size: 38px;
+}
+.item p {
+  margin: 30px 0;
+}
+.clr {
+  clear: both;
+}
+.item img {
+  width: 100%;
+  margin: 30px 0;
+}
+/*****contact*******/
+.contact {
+  background-color: #f8f8f8;
+}
+.contact-details h2 {
+  margin: 30px 0;
+  font-size: 48px;
+  font-weight: 400;
+}
+.contact-details ul li {
+  margin: 30px 0;
+}
+.contact-details ul li span {
+  color: #686868;
+  margin-left: 20px;
+}
+.contact-details ul li a {
+  color: #686868;
+  margin-left: 20px;
+}
+
+.contact-details p {
+  margin-bottom: 30px;
+}
+.contact-details,
+.contact-map {
+  width: 50%;
+  float: left;
+}
+
+.contact-details img {
+  width: 40px;
+  background-color: #8e7754;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  vertical-align: middle;
+}
+/******footer**********/
+#footer {
+  background-color: #403d38;
+}
+#footer h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 30px 0 60px;
+}
+.item-footer {
+  width: 24%;
+  float: left;
+  padding: 5px;
+}
+.item-footer p {
+  color: #cecece;
+
+  margin-bottom: 20px;
+}
+.item-footer img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.item-footer li {
+  color: #cecece;
+  font-size: 16px;
+}
+.item-footer ul li {
+  margin-bottom: 20px;
+}
+.indent {
+  display: inline-block;
+  text-indent: 30px;
+}
+.item-footer li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.bg-image {
+  background-image: url(../images/contact-details-map.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.end-footer {
+  background-color: #353330;
+  text-align: center;
+}
+
+.end-footer .footer-logo {
+  margin: 60px 0 30px 0;
+  width: 350px;
+}
+.end-footer .footer-icon img {
+  width: 100%;
+}
+.end-footer ul li {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background-color: #484540;
+  border-radius: 50%;
+  margin: 25px 5px 20px 5px;
+  cursor: pointer;
+}
+.end-footer ul li:hover {
+  background-color: #1a1a1a;
+}
+.footer-icon {
+  width: fit-content;
+  margin: auto;
+}
